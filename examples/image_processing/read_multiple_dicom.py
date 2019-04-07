@@ -14,7 +14,7 @@ import glob
 
 #%%Data Adquisition
 imagenes = []
-path = "/folder/where/is/the/dataser*.*"
+path = "/folder/where/is/the/dataset/*.*"
 
 for file in glob.glob(path):
     imagenes.append(read_file(file).pixel_array)
